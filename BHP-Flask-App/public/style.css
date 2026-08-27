@@ -1,0 +1,464 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.main-container {
+    width: 100%;
+    max-width: 950px;
+
+    background-color: #ffffff;
+
+    padding: 50px 60px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    margin-bottom: 40px;
+}
+
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #222;
+
+    margin-bottom: 22px;
+}
+
+
+.header p {
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #333;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.prediction-form {
+    width: 100%;
+}
+
+
+/* TWO COLUMN FORM */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    margin-bottom: 30px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+
+/* =========================================
+   INPUTS AND SELECT
+========================================= */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 0 14px;
+
+    font-size: 15px;
+
+    color: #333;
+
+    background-color: #ffffff;
+
+    border: 1px solid #cfcfcf;
+
+    border-radius: 3px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+
+/* FOCUS EFFECT */
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #0d6efd;
+
+    box-shadow:
+        0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+
+/* =========================================
+   PREDICT BUTTON
+========================================= */
+
+.predict-btn {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    background-color: #0d6efd;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
+}
+
+
+.predict-btn:hover {
+    background-color: #0b5ed7;
+}
+
+
+.predict-btn:active {
+    transform: scale(0.99);
+}
+
+
+/* =========================================
+   PREDICTION RESULT
+========================================= */
+
+.prediction-result {
+    text-align: center;
+
+    margin-top: 40px;
+
+    padding-top: 10px;
+}
+
+
+.prediction-result h2 {
+    font-size: 20px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+
+.price {
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #198754;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.error-message {
+    margin-top: 30px;
+
+    padding: 15px 20px;
+
+    background-color: #f8d7da;
+
+    border: 1px solid #f5c2c7;
+
+    border-radius: 4px;
+
+    color: #842029;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 20px 15px;
+        align-items: flex-start;
+    }
+
+
+    .main-container {
+        padding: 35px 25px;
+    }
+
+
+    .header h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+
+    .header p {
+        font-size: 15px;
+    }
+
+
+    /* CHANGE TWO COLUMNS TO ONE */
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .price {
+        font-size: 27px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE SCREENS
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .main-container {
+        padding: 25px 18px;
+    }
+
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+
+    .predict-btn {
+        font-size: 16px;
+    }
+
+}
+
+/* =========================================
+   PROPERTY DETAILS USED FOR PREDICTION
+========================================= */
+
+.prediction-details {
+    margin-top: 30px;
+    padding-top: 25px;
+
+    border-top: 1px solid #e0e0e0;
+}
+
+
+.prediction-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+    color: #333;
+}
+
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.detail-item {
+    padding: 15px 10px;
+
+    background-color: #f8f9fa;
+
+    border: 1px solid #e9ecef;
+
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.detail-label {
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+.detail-value {
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #222;
+
+    word-break: break-word;
+}
+
+
+/* RESPONSIVE DETAILS */
+
+@media screen and (max-width: 768px) {
+
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   BUTTON GROUP
+========================================= */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* PREDICT BUTTON */
+
+.predict-btn {
+    flex: 1;
+}
+
+
+/* RESET BUTTON */
+
+.reset-btn {
+    flex: 1;
+
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    background-color: #6c757d;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    border-radius: 3px;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.reset-btn:hover {
+    background-color: #5c636a;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+
+    .button-group {
+        flex-direction: column;
+    }
+
+}
