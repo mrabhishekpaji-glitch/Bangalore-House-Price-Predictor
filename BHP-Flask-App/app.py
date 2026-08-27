@@ -21,7 +21,7 @@ app = Flask(
 # FILE PATHS
 # --------------------------------------------------
 
-MODEL_PATH = os.path.join(BASE_DIR, "RidgeModel.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "HousePriceModel.pkl")
 DATA_PATH = os.path.join(BASE_DIR, "Cleaned_data.csv")
 
 
