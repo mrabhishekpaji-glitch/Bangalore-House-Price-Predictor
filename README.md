@@ -416,6 +416,10 @@ http://127.0.0.1:5000
 
 ---
 
+<img width="707" height="461" alt="image" src="https://github.com/user-attachments/assets/662286a5-1704-4900-9e14-f62cd20081ea" />
+
+
+
 ## ✨ Key Improvements in the Updated Version
 
 - Visual EDA added
