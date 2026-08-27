@@ -13,6 +13,8 @@ The project uses an updated end-to-end machine learning workflow with **EDA, dat
 
 ## 📊 Project Visuals
 
+<img width="707" height="461" alt="image" src="https://github.com/user-attachments/assets/662286a5-1704-4900-9e14-f62cd20081ea" />
+
 ### Missing Values Analysis
 
 <img width="990" height="490" alt="590ed1f9-43dc-4bba-b4db-11ed88ea7d74" src="https://github.com/user-attachments/assets/3ca8d427-04f3-4de1-bf8a-7b351f27a0c9" />
